@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +15,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Project Covid</title>
+  <title>SB Admin 2 - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -69,24 +75,25 @@
           <span>Self Assignment</span></a>
         </li>
     </ul>
-
     <div id="content-wrapper" class="d-flex flex-column">
-    <div class="container">
-      <div class="jumbotron">
-          <h1 class="display-3">COVID-19</h1>
-
-      </div>
+      <div class="container">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 id="country"></h1>
+          </div>
+        </div>
       <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Country</th>
-            </tr>
-          </thead>
-          <tbody id="data">
-          </tbody>
-        </table>
-    </div>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Confirmed</th>
+            <th scope="col">Death</th>
+            <th scope="col">Recovery</th>
+          </tr>
+        </thead>
+        <tbody id="data"></tbody>
+      </table>
+>
 
       
 
@@ -108,8 +115,9 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="index.js"></script>
+  <script src="country.js"></script>
 
 </body>
 
 </html>
+
