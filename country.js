@@ -18,6 +18,7 @@ $(function () {
                 </tr>`;
       $("#data").append(row);
     }
+    /**/
     var nowConfirmed = selectedCountry[selectedCountry.length - 1].confirmed;
     var nowDeaths = selectedCountry[selectedCountry.length - 1].deaths;
     var nowRecovered = selectedCountry[selectedCountry.length - 1].recovered;
