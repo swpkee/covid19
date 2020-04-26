@@ -59,7 +59,6 @@
           <span>About me</span></a>
       </li>
 
-     
       <hr class="sidebar-divider">
 
       <!-- Nav Item - Pages Collapse Menu -->
@@ -70,6 +69,7 @@
           <span>graph</span></a>
         </li>
 
+     
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -82,13 +82,7 @@
         </li>
     </ul>
     
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div class="container">
-        <div class="jumbotron">
-          <div class="container">
-            <h1 id="country"></h1>
-          </div>
-      </div>
+   
       <div class="container-fluid">
       <div class="row">
 
@@ -98,11 +92,11 @@
             <div class="card-body">
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                  <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Confirmed</div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="nowConfirmed"></div>
+                  <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">ConfirmedAll</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="totalconfirm"></div>
                 </div>
                 <div class="col-auto">
-                
+                  
                 </div>
               </div>
             </div>
@@ -115,8 +109,8 @@
             <div class="card-body">
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                  <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Death</div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="nowDeaths"></div>
+                  <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">DeathAll</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="totaldeaths"></div>
                 </div>
                 <div class="col-auto">
                   
@@ -132,39 +126,51 @@
             <div class="card-body">
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                  <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Recovery</div>
+                  <div class="text-xs font-weight-bold text-info text-uppercase mb-1">RecoveredAll</div>
                   <div class="row no-gutters align-items-center">
                     <div class="col-auto">
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><p id="nowRecovered"></div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><p id="totalrecovered"></div>
                     </div>
                     
                 </div>
                 <div class="col-auto">
-                  
+                 
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
     </div>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Date</th>
-            <th scope="col">Confirmed</th>
-            <th scope="col">Death</th>
-            <th scope="col">Recovery</th>
-          </tr>
-        </thead>
-        <tbody id="data"></tbody>
-      </table>
+
+        <!-- Area Chart -->
+        <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Graphs <br> Covid19 <br> Realtime</h6>
+                <div class="dropdown no-arrow">
+                 
+                  
+                </div>
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+              </div>
+              <!-- Card Body -->
+             
+              </div>
+            </div>
+          </div>
+        
+
 
 
       
 
             
+  
+  </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -180,9 +186,9 @@
   <script src="vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="country.js"></script>
+
+  <script src="graph.js"></script>
+  <script src="link.js"></script>
 
 </body>
 
